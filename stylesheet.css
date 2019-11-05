@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+html {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Classes*/
+.background {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: inherit;
+    display: inline-block;
+    padding-right: 5%;
+}
+
+.appTitle {
+    color: white;
+    font-size: 25px;
+    text-align: left !important;
+}
+
+.text {
+    color: white;
+}
+
+.content {
+    min-height: 100%;
+    position: relative;
+}
+
+/*ID*/
+#logo {
+    color: white;
+    text-align: center;
+    font-size: 50pt;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contactForm {
+    margin-left: 25%;
+    margin-right:25%;
+    width: 50%;
+}
+
+#appList {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+#contactInput {
+    background-color: #2e2e2e;
+    border-color: #2e2e2e;
+    color: white;
+}
+
+#footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+#contactLabel {
+    color: white;
+}
+
+/*HTML*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+
+li {
+    float: center;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: orange;
+}
