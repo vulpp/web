@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
 
 html {
-    background-color: black;
+    background-color: black !important;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -24,6 +24,10 @@ html {
     padding-right: 5%;
 }
 
+.icon {
+    border-radius: 25px;
+}
+
 .appTitle {
     color: white;
     font-size: 25px;
@@ -32,11 +36,31 @@ html {
 
 .text {
     color: white;
+    text-align: center;
+}
+
+.image {
+    border-radius: 100px;
 }
 
 .content {
     min-height: 100%;
     position: relative;
+}
+
+.text-header {
+    text-align: center;
+    color: white;
+}
+
+.cTitle {
+    text-align: center;
+    color: white !important;
+}
+
+.cContent {
+    text-align: center;
+    color: white !important;
 }
 
 /*ID*/
@@ -55,9 +79,11 @@ html {
 }
 
 #appList {
-    display: flex;
-    width: auto;
-    justify-content: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    right: 0;
+    left: 0;
 }
 
 #contactInput {
@@ -71,10 +97,18 @@ html {
     text-align: center;
     width: 100%;
     height: 30px;
+    background-color: black;
 }
 
 #contactLabel {
     color: white;
+}
+
+#legal {
+    text-align: left;
+    margin-left: 25%;
+    margin-right:25%;
+    width: 50%;
 }
 
 /*HTML*/
