@@ -19,8 +19,8 @@ html {
     background-color: black;
     color: white;
     margin: auto;
-    padding: inherit;
     display: inline-block;
+    width: 80%;
     padding-right: 5%;
 }
 
@@ -79,9 +79,7 @@ html {
 }
 
 #appList {
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
+    text-align: center;
     right: 0;
     left: 0;
 }
@@ -106,9 +104,13 @@ html {
 
 #legal {
     text-align: left;
-    margin-left: 25%;
-    margin-right:25%;
-    width: 50%;
+    margin-left: 15%;
+    margin-right:15%;
+    width: 70%;
+}
+
+#appBoxes {
+    align-content: center;
 }
 
 /*HTML*/
