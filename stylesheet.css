@@ -19,7 +19,8 @@ html {
     background-color: black;
     color: white;
     display: flex;
-    margin: auto;
+    height: inherit;
+    margin: inherit;
 }
 
 .icon {
