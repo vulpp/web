@@ -18,10 +18,7 @@ html {
 .box {
     background-color: black;
     color: white;
-    display: inline-flex;
-    width: 100%;
-    padding-right: 0%;
-    padding-left: 0%;
+    display: flex;
     margin: auto;
 }
 
@@ -54,14 +51,8 @@ html {
     color: white;
 }
 
-.cTitle {
-    text-align: center;
-    color: white !important;
-}
-
-.cContent {
-    text-align: center;
-    color: white !important;
+.media-left {
+    margin: auto;
 }
 
 /*ID*/
