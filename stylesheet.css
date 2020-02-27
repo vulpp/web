@@ -15,22 +15,8 @@ html {
     height: 100%;
 }
 
-.box {
-    background-color: black;
-    color: white;
-    display: flex;
-    height: inherit;
-    margin: inherit;
-}
-
 .icon {
     border-radius: 25px;
-}
-
-.appTitle {
-    color: white;
-    font-size: 25px;
-    text-align: left !important;
 }
 
 .text {
@@ -39,7 +25,31 @@ html {
 }
 
 .image {
-    border-radius: 100px;
+    border-radius: 35px;
+    width: 160px;
+    height: 160px;
+}
+
+#app-list {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.box {
+    background-color: black;
+}
+
+.app {
+    text-align: center;
+    display: inline-block;
+}
+
+.app-title {
+    color: white !important;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 25px;
 }
 
 .content {
@@ -50,6 +60,12 @@ html {
 .text-header {
     text-align: center;
     color: white;
+}
+
+.contact-input {
+    background-color: #2e2e2e !important;
+    border-color: #2e2e2e !important;
+    color: white !important;
 }
 
 .media-left {
@@ -72,15 +88,8 @@ html {
 }
 
 #appList {
-    text-align: center;
-    right: 0;
-    left: 0;
-}
-
-#contactInput {
-    background-color: #2e2e2e;
-    border-color: #2e2e2e;
-    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #footer {
@@ -95,15 +104,16 @@ html {
     color: white;
 }
 
+#contact-button {
+    border-radius: 5px;
+    text-align: center;
+}
+
 #legal {
     text-align: left;
     margin-left: 15%;
     margin-right:15%;
     width: 70%;
-}
-
-#appBoxes {
-    align-content: center;
 }
 
 /*HTML*/

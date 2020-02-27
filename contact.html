@@ -23,24 +23,32 @@
                 <div class="field">
                     <label class="label" id="contactLabel">Name</label>
                         <div class="control">
-                            <input class="input" type="text" id="contactInput">
+                            <input class="input contact-input" type="text" id="name-input" required>
                         </div>
                 </div>
                 <div class="field">
                     <label class="label" id="contactLabel">Email</label>
                         <div class="control">
-                            <input class="input" type="email" id="contactInput">
+                            <input class="input contact-input" type="email" id="email-input" required>
                         </div>
                 </div>
                 <div class="field">
                     <label class="label" id="contactLabel">Message</label>
                         <div class="control">
-                            <textarea class="textarea" id="contactInput"></textarea>
+                            <textarea class="textarea contact-input" id="message-input" required></textarea>
                         </div>
                 </div>
                 <p class="text"></p>
                 <br>
-                <button class="button" id="contactInput">Submit</button>
+                <a href="#" onClick="(function() {
+                        var name = document.getElementById('name-input');
+                        var email = document.getElementById('email-input');
+                        var message = document.getElementById('message-input');
+                        name.innerHTML = "";
+                        email.innerHTML = "";
+                        message.innerHTML = "";
+                        return false;
+                })();return false;"><button class="button" id="contact-button">Submit</button></a>
                 </div>
             </div>
         </section>
