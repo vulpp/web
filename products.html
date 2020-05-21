@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vulpp</title>
+	<link rel="stylesheet" href="node/node_modules/bulma/css/bulma.css">
+	<link rel="stylesheet" href="styles/global.css">
+	<link rel="stylesheet" href="styles/products.css">
+</head>
+
+<body id="background">
+	<a href="/">
+		<img src="/images/logo.png" id="logo">
+	</a>
+
+	<div id="menu-background">
+		<button onclick="closeMenu()" class="button" id="close-button">
+			<img src="/images/icons/close.png">
+		</button>
+		<div class="menu-items">
+			<a href="/">Home</a>
+			<a href="/products.html" style="color: #fa8a23;">Products</a>
+			<a href="/careers.html">Careers</a>
+			<a href="/contact.html">Contact</a>
+		</div>
+		<div id="menu-footer">
+			<p>© VULPP LLC</p>
+		</div>
+	</div>
+
+	<button onclick="openMenu()" class="button" id="menu-button">
+		<img src="/images/icons/menu.png">
+	</button>
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu-background").style.width = "250px";
+			document.getElementById("menu-button").style.opacity = "0";
+			document.getElementById("close-button").style.opacity = "1";
+		}
+
+		function closeMenu() {
+			document.getElementById("menu-background").style.width = "0px";
+			document.getElementById("menu-button").style.opacity = "1";
+			document.getElementById("close-button").style.opacity = "0";
+		}
+	</script>
+</body></html>

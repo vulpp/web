@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact - Vulpp</title>
+	<link rel="stylesheet" href="/node/node_modules/bulma/css/bulma.css">
+	<link rel="stylesheet" href="/styles/contact.css">
+	<link rel="stylesheet" href="/styles/global.css">
+</head>
+
+<body id="background">
+	<a href="/">
+		<img src="/images/logo.png" id="logo">
+	</a>
+	<div id="menu-background">
+		<button onclick="closeMenu()" class="button" id="close-button">
+			<img src="images/icons/close.png">
+		</button>
+		<div class="menu-items">
+			<a href="/">Home</a>
+			<a href="/products.html">Products</a>
+			<a href="/careers.html">Careers</a>
+			<a href="/contact.html" style="color: #fa8a23;">Contact</a>
+		</div>
+		<div id="menu-footer">
+			<p>© VULPP LLC</p>
+		</div>
+	</div>
+	<button onclick="openMenu()" class="button" id="menu-button">
+		<img src="/images/icons/menu.png">
+	</button>
+
+	
+	<div class="wrap" id="content">
+		<div class="left-container">
+			<h1 class="header">Contact</h1>
+			<h2 class="subheader">contact@vulpp.com</h2>
+			<br>
+			<h2 class="subheader">Winston-Salem, NC</h2>
+			<div class="social-buttons">
+				<a href="https://twitter.com/vulpp_">
+					<img src="/images/icons/twitter.png">
+				</a>
+			</div>
+		</div>
+		
+		<div class="right-container">
+			<form>
+				<input type="text" id="fname" name="firstname" placeholder="Name">
+				<input type="text" id="subject" name="subject" placeholder="Subject">
+				<textarea id="message" name="message" placeholder="Message" style="height:140px"></textarea>
+				<button class="submit-button" onclick="sendMessage()">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu-background").style.width = "250px";
+		}
+		function closeMenu() {
+			document.getElementById("menu-background").style.width = "0px";
+		}
+		function sendMessage() {
+			let name = document.getElementById("fname");
+			let subject = document.getElementById("subject");
+			let message = document.getElementById("message");
+			name.innerHTML = "";
+			subject.innerHTML = "";
+			message.innerHTML = "";
+		}
+	</script>
+</body></html>

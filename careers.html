@@ -1,0 +1,80 @@
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vulpp</title>
+	<link rel="stylesheet" href="node/node_modules/bulma/css/bulma.css">
+	<link rel="stylesheet" href="styles/global.css">
+	<link rel="stylesheet" href="styles/careers.css">
+</head>
+
+<body id="background">
+	<a href="/">
+		<img src="/images/logo.png" id="logo">
+	</a>
+
+	<div id="menu-background">
+		<button onclick="closeMenu()" class="button" id="close-button">
+			<img src="/images/icons/close.png">
+		</button>
+		<div class="menu-items">
+			<a href="/">Home</a>
+			<a href="/products.html">Products</a>
+			<a href="/careers.html" style="color: #fa8a23;">Careers</a>
+			<a href="/contact.html">Contact</a>
+		</div>
+		<div id="menu-footer">
+			<p>© VULPP LLC</p>
+		</div>
+	</div>
+
+	<button onclick="openMenu()" class="button" id="menu-button">
+		<img src="/images/icons/menu.png">
+	</button>
+
+	<div class="tiles" id="content">
+		<h1 class="header">Careers</h1>
+		<br>
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<div class="tile is-child box container">
+					<p class="title">iOS Developer</p>
+					<p></p>
+				</div>
+			</div>
+			<div class="tile is-parent">
+				<div class="tile is-child box container">
+					<p class="title">Web Developer</p>
+					<p></p>
+				</div>
+			</div>
+			<div class="tile is-parent">
+				<div class="tile is-child box container">
+					<p class="title">Android Developer</p>
+					<p></p>
+				</div>
+			</div>
+			<div class="tile is-parent">
+				<div class="tile is-child box container">
+					<p class="title">Director - Marketing</p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu-background").style.width = "250px";
+			document.getElementById("menu-button").style.opacity = "0";
+			document.getElementById("close-button").style.opacity = "1";
+		}
+
+		function closeMenu() {
+			document.getElementById("menu-background").style.width = "0px";
+			document.getElementById("menu-button").style.opacity = "1";
+			document.getElementById("close-button").style.opacity = "0";
+		}
+	</script>
+</body></html>

@@ -1,0 +1,127 @@
+html {
+	background-color: #050505;
+}
+
+#background {
+	background-color: #050505;
+
+	font-family: 'Heebo', sans-serif;
+	transition: 0.2s;
+}
+
+#content {
+	animation-name: appear;
+	animation-duration: 2s;
+}
+
+#menu-button {
+	background-color: transparent;
+	border-color: transparent;
+	position: absolute;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	top: 0;
+	right: 0;
+	outline-color: transparent;
+	outline: none;
+	padding: 5px;
+}
+
+#menu-background {
+	background-color: #050505;
+	padding-top: 20px;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	overflow-x: hidden;
+	transition: 0.3s;
+
+	position: absolute;
+	top: 0;
+	right: 0px;
+	font-size: 22px;
+	margin-left: 50px;
+}
+
+#menu-footer {
+	color: #202020;
+	position: absolute;
+	bottom: 10;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+}
+
+#close-button {
+	background-color: transparent;
+	border-color: transparent;
+	position: absolute;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	top: 0;
+	right: 0;
+	outline-color: transparent;
+	padding: 5px;
+}
+
+.menu-items {
+	color: white;
+	text-align: right;
+	font-size: 27px;
+	transition: 0.2s;
+	
+	padding-top: 250px;
+	padding-right: 20px;
+	vertical-align: middle;
+	line-height: 70px;
+}
+
+.menu-items a {
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	text-align: right;
+	font-size: 30px;
+	color: white;
+	display: block;
+	transition: 0.2s;
+	font-weight: 700;
+}
+
+a:hover {
+	color: #fa8a23;
+}
+
+a:active {
+	color: #fa8a23;
+}
+
+@keyframes appear {
+	0% {
+		transform: translate(0px, 50px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+
+@media screen and (max-height: 450px) {
+	#menu-background {
+		padding-top: 15px;
+	}
+
+	#menu-background a {
+		font-size: 18px;
+	}
+}

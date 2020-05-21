@@ -1,0 +1,108 @@
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cobalt - Vulpp</title>
+	<link rel="stylesheet" href="/Node/node_modules/bulma/css/bulma.css">
+	<link rel="stylesheet" href="/styles/legal.css">
+	<link rel="stylesheet" href="/styles/global.css">
+</head>
+
+<body id="background">
+	<a href="/">
+		<img src="/images/logo.png" id="logo">
+	</a>
+	<div id="menu-background">
+		<button onclick="closeMenu()" class="button" id="close-button">
+			<img src="/Images/Icons/close.png">
+		</button>
+		<div class="menu-items">
+			<a href="/">Home</a>
+			<a href="/pages/products.html">Products</a>
+			<a href="/pages/careers.html">Careers</a>
+			<a href="/pages/contact.html">Contact</a>
+		</div>
+		<div id="menu-footer">
+			<p>© VULPP LLC</p>
+		</div>
+	</div>
+	<button onclick="openMenu()" class="button" id="menu-button">
+		<img src="/images/icons/menu.png">
+	</button>
+
+	<div class="wrap">
+		<div class="left-container">
+			<h1 class="header">Cobalt</h1>
+			<h1 class="header">Terms and Conditions</h1>
+			<h2 class="subheader">Last updated: 5/20/2020</h2>
+		</div>
+		<div class="right-container">
+			<b class="secondary-header">Agreement</b>
+			<br>
+			<text class="has-text-white">
+				These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity or business, concerning your access to and use of the Cobalt application created by us. You agree that by accessing the application, you have read, understood, and agree to be bound by all of these Terms and Conditions Use. If you do not agree with these terms and conditions than do not use our application.
+			</text>
+			<br>
+			<br>
+			<b class="secondary-header">Usage</b>
+			<br>
+			<text class="has-text-white">
+				The Cobalt application for mobile devices developed by Vulpp LLC is intended only for information purposes and not intended to serve as a recommendation for buying a security through another brokerage. By using this application, you agree to using it for informational and research purposes only.
+			</text>
+			<br>
+			<br>
+			<b class="secondary-header">Data</b>
+			<br>
+			<text class="has-text-white">
+				Our <a href="https://iexcloud.io">data is provided by IEX Cloud</a> and engulfs the data seen on the entire application. We intend to make sure the data is as accurate as possible, however, there may be times during usage where data may be innacurate due to issues on our end or our data providers end. By using this application, you understand and agree that our data may not be 100% accurate at all times and not to use this data when inquiring about a potential purchase of a security.
+			</text>
+			<br>
+			<text class="has-text-white">IEX Cloud's terms of service is availible <a href="https://iexcloud.io/terms/">here</a>. By using this service, you also agree to sections 5.1, 12, and 14.1 in the IEX Cloud's terms of service and any other end-user terms outlined in IEX's terms of service.</text>
+			<br>
+			<br>
+			<b class="secondary-header">Opt-out</b>
+			<br>
+			<text class="has-text-white">
+				To opt-out of these terms of service, simply delete the application from your device and stop using it. You may opt-back in by redownloading the application and agreeing to the terms again.
+			</text>
+			<br>
+			<br>
+			<b class="secondary-header">Disclosures</b>
+			<br>
+			<text class="has-text-white">
+				When you first use our application, your "watchlist" is pre-populated with stocks that were chosen by us. These are removeable and are not in any way a recommendation, by us, to purchase those securities.
+			</text>
+			<br>
+			<br>
+			<text class="has-text-white">
+				The data and information that you see for each security is altered and curated for the purpose of design and readability. This curation includes altering and adjusting security and company names, rounding numbers, and adjusting other data for design purposes.
+			</text>
+			<br>
+			<br>
+			<text class="has-text-white">
+				The news articles that you see throughout the application are in no way an intention of recommending any security to you. These articles are based on overall market news and news from stocks that you follow. If you no longer want to see articles for a specific stock, you may "unfollow" or remove the security from your watchlist.
+			</text>
+			<br>
+			<br>
+			<text class="has-text-white">
+				The "Analyst Ratings" section of the application is only intended for information purposes. This data is provided to us by our data provider and is in no way a recommendation from us to buy, hold, or sell a security.
+			</text>
+			<br>
+			<br>
+			<br>
+			<em>The usage of the terms "Cobalt," "app," and "application" throughout the terms of service and privacy policy refer to the software application, Cobalt, created by Vulpp LLC. The terms of service and privacy policy outlined above may be changed or updated at any time. You agree to frequently check for changes and agree to all changes that may occur in the future, while you still use the application.</em>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<script>
+		function openMenu() {
+			document.getElementById("menu-background").style.width = "250px";
+		}
+
+		function closeMenu() {
+			document.getElementById("menu-background").style.width = "0px";
+		}
+	</script>
+</body></html>
