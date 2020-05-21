@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+#logo {
+	position: absolute;
+	padding: 5px;
+	top: 0;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: -40px;
+}
+
+.wrap {
+	display: flex;
+}
+
+.left-container {
+	padding-top: 200px;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	width: 50%;
+}
+
+.right-container {
+	padding-top: 200px;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	width: 50%;
+}
+
+.header {
+	color: white;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.subheader {
+	color: lightgray;
+	font-size: 18px;
+}
+
+.secondary-header {
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+
+@media (max-width: 767px) {
+	.wrap {
+		flex-direction: column;
+	}
+
+	.left-container,
+	.right-container {
+		width: 100%;
+	}
+}

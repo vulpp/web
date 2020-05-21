@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+#logo {
+	position: absolute;
+	padding: 5px;
+	top: 0;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin-top: 5px;
+	margin-left: -40px;
+}
+
+.wrap {
+	display: flex;
+}
+
+.left-container {
+	padding-top: 200px;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	width: 50%;
+}
+
+.right-container {
+	padding-top: 200px;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+	width: 50%;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 15px;
+	border: 0px solid #ccc;
+	border-radius: px;
+	box-sizing: border-box;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	resize: none;
+	background-color: #1c1c1c;
+	color: white;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+input[type=submit] {
+	background-color: #fa8a23;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+input[type=submit]:hover {
+	background-color: #fa8a23;
+}
+
+.social-buttons {
+	padding-top: 50px;
+	width: 40px;
+}
+
+.submit-button {
+	background-color: #fa8a23;
+	color: white;
+	border: none;
+	width: 100px;
+	height: 50px;
+	font-weight: 700;
+}
+
+.header {
+	color: white;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.subheader {
+	color: lightgray;
+	font-size: 18px;
+}
+
+
+@media (max-width: 767px) {
+	.wrap {
+		flex-direction: column;
+	}
+	
+	.left-container {
+		width: 100%;
+		margin-top: 0px;
+	}
+	
+	.right-container {
+		width: 100%;
+		margin-top: -150px;
+		margin-bottom: 100px;
+	}
+}

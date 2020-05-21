@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+#main-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: -100px;
+	/*Half*/
+	margin-left: -100px;
+	
+	animation-name: appear;
+	animation-duration: 2s;
+}
+
+@keyframes appear {
+	0% {
+		transform: translate(0px, 50px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
